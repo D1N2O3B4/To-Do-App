@@ -24,6 +24,5 @@ while user_choice != "":
         operations[user_choice](action)
         user_choice = input("Type add,show,remove or press enter to quit")
     else:
-        print("wORKING")
         operations[user_choice]
         user_choice = input("Type add,show,remove or press enter to quit")
