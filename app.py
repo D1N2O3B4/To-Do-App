@@ -18,8 +18,8 @@ operations = {
 
 user_choice = input("Type add,show,remove or press enter to quit")
 
-if operations[user_choice] != "":
-    pass
-
+while operations[user_choice] != "":
+    operations[user_choice]
+    
 else:
-    pass
+    print("Closing now")
