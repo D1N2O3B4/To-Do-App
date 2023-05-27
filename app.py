@@ -3,8 +3,7 @@ store = []
 def add(params):
     store.append(params)
 def show():
-    for i in store.index():
-        print(f"{i}")
+    print(store)
 
         
 def remove(params):
@@ -22,6 +21,6 @@ while operations[user_choice] != "":
     if user_choice == "add":
         action = input("Type in action")
         operations[user_choice](action)
-        break
+        user_choice = input("Type add,show,remove or press enter to quit")
     else:
         operations[user_choice]
