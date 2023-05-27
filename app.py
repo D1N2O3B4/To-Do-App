@@ -19,7 +19,9 @@ operations = {
 user_choice = input("Type add,show,remove or press enter to quit")
 
 while operations[user_choice] != "":
-    operations[user_choice]
-    
-else:
-    print("Closing now")
+    if user_choice == "add":
+        action = input("Type in action")
+        operations[user_choice](action)
+        break
+    else:
+        operations[user_choice]
