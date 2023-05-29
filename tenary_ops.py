@@ -13,3 +13,6 @@ print(test)
 expo = 6.02e23
 print(expo)
 
+name = "David"
+
+print("D" in name)
