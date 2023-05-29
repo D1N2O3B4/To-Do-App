@@ -21,3 +21,10 @@ player1 = "Sam Cole"
 player2 = "J Cole"
 player3 = player1.replace("Sam","Patrick")
 print(player3)
+
+
+txt = ",,,,,rrttgg.....banana....rrr"
+
+x = txt.strip(",rtg")
+
+print(x)
