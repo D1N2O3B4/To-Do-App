@@ -9,3 +9,7 @@ test = 3.0
 print(test)
 test = 21.0
 print(test)
+
+expo = 6.02e23
+print(expo)
+
