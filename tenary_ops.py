@@ -16,3 +16,8 @@ print(expo)
 name = "David"
 
 print("D" in name)
+
+player1 = "Sam Cole"
+player2 = "J Cole"
+player3 = player1.replace("Sam","Patrick")
+print(player3)
