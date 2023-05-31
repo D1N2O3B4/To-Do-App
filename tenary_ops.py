@@ -1,30 +1,39 @@
-x,y = 5,6
-print("x" if x > y else "y")
+# x,y = 5,6
+# print("x" if x > y else "y")
 
-a,b = 5,3
+# a,b = 5,3
 
-print((b,a) [a<b])
+# print((b,a) [a<b])
 
-test = 3.0
-print(test)
-test = 21.0
-print(test)
+# test = 3.0
+# print(test)
+# test = 21.0
+# print(test)
 
-expo = 6.02e23
-print(expo)
+# expo = 6.02e23
+# print(expo)
 
-name = "David"
+# name = "David"
 
-print("D" in name)
+# print("D" in name)
 
-player1 = "Sam Cole"
-player2 = "J Cole"
-player3 = player1.replace("Sam","Patrick")
-print(player3)
+# player1 = "Sam Cole"
+# player2 = "J Cole"
+# player3 = player1.replace("Sam","Patrick")
+# print(player3)
 
 
-txt = ",,,,,rrttgg.....banana....rrr"
+# txt = ",,,,,rrttgg.....banana....rrr"
 
-x = txt.strip(",rtg")
+# x = txt.strip(",rtg")
 
-print(x)
+# print(x)
+
+# sentence = """  Hello  we are you    
+# but could be mee  
+#   so come here"""
+
+# print(sentence.strip())
+
+player = dict(name="Melo",no = 1,position = "Point Guard")
+print(player)
