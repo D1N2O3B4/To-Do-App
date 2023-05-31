@@ -37,3 +37,6 @@
 
 player = dict(name="Melo",no = 1,position = "Point Guard")
 print(player)
+
+print(player.get("name"))
+print(player.get("age",None)) #This checks if age is a key if not return the message None
