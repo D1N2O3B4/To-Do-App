@@ -35,14 +35,18 @@
 
 # print(sentence.strip())
 
-player = dict(name="Melo",no = 1,position = "Point Guard")
-print(player)
+# player = dict(name="Melo",no = 1,position = "Point Guard")
+# print(player)
 
-print(player.get("name"))
-print(player.get("age",None)) #This checks if age is a key if not return the message None
+# print(player.get("name"))
+# print(player.get("age",None)) #This checks if age is a key if not return the message None
 
-lso = ["Aw"]
-lso[0] = "Mt.Human"#works if the list already has members
-print(lso)
+# lso = ["Aw"]
+# lso[0] = "Mt.Human"#works if the list already has members
+# print(lso)
 
-#Copying makes sure the orignal variable is not affected
+# #Copying makes sure the orignal variable is not affected
+# down = [1,23,4,12,66]
+
+for i in range(10):
+    print(i,end="-")#to prevent new lines from occuring
