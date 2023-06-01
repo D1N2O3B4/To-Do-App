@@ -75,4 +75,6 @@ star = star[:-1][:-1]
 while len(star) > 0:
     print(f"{star:^{a}}")
     star =  star[:-1][:-1]
-    
+
+name = "Myelin"
+print(list(enumerate(name)))
