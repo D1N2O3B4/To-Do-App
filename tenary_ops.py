@@ -48,5 +48,31 @@
 # #Copying makes sure the orignal variable is not affected
 # down = [1,23,4,12,66]
 
-for i in range(10):
-    print(i,end="-")#to prevent new lines from occuring
+# for i in range(10):
+#     print(i,end="-")#to prevent new lines from occuring
+
+# name = "David" if False else "Stan"
+# print("My name is {}".format(name))
+
+star = "*"
+count = 10
+
+"""Half Diamond"""
+while len(star) < count:
+    print(star)
+    star += "*"
+while len(star)> 0:
+    print(star)
+    star = star[:-1]
+
+"""Full Diamond"""
+
+while len(star) < 10:
+    a = 10
+    print(f"{star:^{a}}")
+    star += "**"
+star = star[:-1][:-1]
+while len(star) > 0:
+    print(f"{star:^{a}}")
+    star =  star[:-1][:-1]
+    
