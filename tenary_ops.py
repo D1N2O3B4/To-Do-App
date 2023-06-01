@@ -44,3 +44,5 @@ print(player.get("age",None)) #This checks if age is a key if not return the mes
 lso = ["Aw"]
 lso[0] = "Mt.Human"#works if the list already has members
 print(lso)
+
+#Copying makes sure the orignal variable is not affected
