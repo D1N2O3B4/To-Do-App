@@ -40,3 +40,7 @@ print(player)
 
 print(player.get("name"))
 print(player.get("age",None)) #This checks if age is a key if not return the message None
+
+lso = ["Aw"]
+lso[0] = "Mt.Human"#works if the list already has members
+print(lso)
