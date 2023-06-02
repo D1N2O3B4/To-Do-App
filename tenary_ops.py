@@ -78,3 +78,8 @@ while len(star) > 0:
 
 name = "Myelin"
 print(list(enumerate(name)))
+
+if { 'a': 34 }:
+    print('The condition evaluted to True')
+else:
+    print('The condition evaluted to False')
