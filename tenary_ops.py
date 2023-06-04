@@ -85,3 +85,12 @@ else:
     print('The condition evaluted to False')
 
 print("Ok" if True else False)
+
+a = 10
+
+if a % 2 == 0:
+    print("Two")
+if a % 5 == 0:
+    print("Five")
+else:
+    print("Nothing")
