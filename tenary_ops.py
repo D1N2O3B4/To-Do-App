@@ -83,3 +83,5 @@ if { 'a': 34 }:
     print('The condition evaluted to True')
 else:
     print('The condition evaluted to False')
+
+print("Ok" if True else False)
