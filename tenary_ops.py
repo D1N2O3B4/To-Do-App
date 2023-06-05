@@ -94,3 +94,9 @@ if a % 5 == 0:
     print("Five")
 else:
     print("Nothing")
+
+print(3e3)
+print(3e-3)
+print()
+
+
