@@ -100,3 +100,13 @@ print(3e-3)
 print()
 
 
+def all(lisp):
+    for i in lisp:
+        print(i)
+
+print(all([1,2,5,6,12,33]))
+print("****")
+for i in [1,2,5,6,12,33]:
+    print(i)
+
+
