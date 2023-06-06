@@ -132,3 +132,4 @@ import os
 a = os.getcwdb()
 print(a.upper())
 print(a.decode())
+print(os.listdir('/Users'))
