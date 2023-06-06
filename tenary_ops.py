@@ -116,7 +116,7 @@ import os
 #     c = a/3
 #     print("Worked")
 
-# except ValueError:
+# except OSError:
 #     print('Value ebing divided not possible')
 
 # except Exception:
@@ -134,3 +134,6 @@ print(a.upper())
 print(a.decode())
 print(os.listdir('/Users'))
 os.makedirs("./Created",exist_ok=True) # The exist_ok = True acts as an error handler in case you call the statement and the folder already exists
+
+print("Create" in os.listdir("."))
+print(os.listdir("Created"))
