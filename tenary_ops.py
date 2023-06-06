@@ -1,3 +1,4 @@
+import os
 # x,y = 5,6
 # print("x" if x > y else "y")
 
@@ -109,21 +110,25 @@
 # for i in [1,2,5,6,12,33]:
 #     print(i)
 
-a = 12
+# a = 12
 
-try:
-    c = a/3
-    print("Worked")
+# try:
+#     c = a/3
+#     print("Worked")
 
-except ValueError:
-    print('Value ebing divided not possible')
+# except ValueError:
+#     print('Value ebing divided not possible')
 
-except Exception:
-    print("Trying to divide by zero not possible")
+# except Exception:
+#     print("Trying to divide by zero not possible")
 
-except SyntaxError:
-    print("Trying to divide by zero not possible")
-else:
-    print("We work if nothing happens")
-finally:
-    print('I will always work no matter what')
+# except SyntaxError:
+#     print("Trying to divide by zero not possible")
+# else:
+#     print("We work if nothing happens")
+# finally:
+#     print('I will always work no matter what')
+
+a = os.getcwdb()
+print(a.upper())
+print(a.decode())
