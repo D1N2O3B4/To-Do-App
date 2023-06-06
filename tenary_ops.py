@@ -54,59 +54,76 @@
 # name = "David" if False else "Stan"
 # print("My name is {}".format(name))
 
-star = "*"
-count = 10
+# star = "*"
+# count = 10
 
-"""Half Diamond"""
-while len(star) < count:
-    print(star)
-    star += "*"
-while len(star)> 0:
-    print(star)
-    star = star[:-1]
+# """Half Diamond"""
+# while len(star) < count:
+#     print(star)
+#     star += "*"
+# while len(star)> 0:
+#     print(star)
+#     star = star[:-1]
 
-"""Full Diamond"""
+# """Full Diamond"""
 
-while len(star) < 10:
-    a = 10
-    print(f"{star:^{a}}")
-    star += "**"
-star = star[:-1][:-1]
-while len(star) > 0:
-    print(f"{star:^{a}}")
-    star =  star[:-1][:-1]
+# while len(star) < 10:
+#     a = 10
+#     print(f"{star:^{a}}")
+#     star += "**"
+# star = star[:-1][:-1]
+# while len(star) > 0:
+#     print(f"{star:^{a}}")
+#     star =  star[:-1][:-1]
 
-name = "Myelin"
-print(list(enumerate(name)))
+# name = "Myelin"
+# print(list(enumerate(name)))
 
-if { 'a': 34 }:
-    print('The condition evaluted to True')
+# if { 'a': 34 }:
+#     print('The condition evaluted to True')
+# else:
+#     print('The condition evaluted to False')
+
+# print("Ok" if True else False)
+
+# a = 10
+
+# if a % 2 == 0:
+#     print("Two")
+# if a % 5 == 0:
+#     print("Five")
+# else:
+#     print("Nothing")
+
+# print(3e3)
+# print(3e-3)
+# print()
+
+
+# def all(lisp):
+#     for i in lisp:
+#         print(i)
+
+# print(all([1,2,5,6,12,33]))
+# print("****")
+# for i in [1,2,5,6,12,33]:
+#     print(i)
+
+a = 12
+
+try:
+    c = a/3
+    print("Worked")
+
+except ValueError:
+    print('Value ebing divided not possible')
+
+except Exception:
+    print("Trying to divide by zero not possible")
+
+except SyntaxError:
+    print("Trying to divide by zero not possible")
 else:
-    print('The condition evaluted to False')
-
-print("Ok" if True else False)
-
-a = 10
-
-if a % 2 == 0:
-    print("Two")
-if a % 5 == 0:
-    print("Five")
-else:
-    print("Nothing")
-
-print(3e3)
-print(3e-3)
-print()
-
-
-def all(lisp):
-    for i in lisp:
-        print(i)
-
-print(all([1,2,5,6,12,33]))
-print("****")
-for i in [1,2,5,6,12,33]:
-    print(i)
-
-
+    print("We work if nothing happens")
+finally:
+    print('I will always work no matter what')
