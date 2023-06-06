@@ -1,3 +1,4 @@
+from urllib.request import urlretrieve  
 import os
 # x,y = 5,6
 # print("x" if x > y else "y")
@@ -129,11 +130,15 @@ import os
 # finally:
 #     print('I will always work no matter what')
 
-a = os.getcwdb()
-print(a.upper())
-print(a.decode())
-print(os.listdir('/Users'))
-os.makedirs("./Created",exist_ok=True) # The exist_ok = True acts as an error handler in case you call the statement and the folder already exists
+# a = os.getcwdb()
+# print(a.upper())
+# print(a.decode())
+# print(os.listdir('/Users'))
+# os.makedirs("./Created",exist_ok=True) # The exist_ok = True acts as an error handler in case you call the statement and the folder already exists
 
-print("Create" in os.listdir("."))
-print(os.listdir("Created"))
+# print("Create" in os.listdir("."))
+# print(os.listdir("Created"))
+
+url1 = 'https://gist.githubusercontent.com/aakashns/257f6e6c8719c17d0e498ea287d1a386/raw/7def9ef4234ddf0bc82f855ad67dac8b971852ef/loans1.txt'
+
+urlretrieve(url1,"./Created/read.txt")
