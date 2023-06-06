@@ -133,4 +133,4 @@ a = os.getcwdb()
 print(a.upper())
 print(a.decode())
 print(os.listdir('/Users'))
-os.makedirs("./Created",exist_ok=True)
+os.makedirs("./Created",exist_ok=True) # The exist_ok = True acts as an error handler in case you call the statement and the folder already exists
