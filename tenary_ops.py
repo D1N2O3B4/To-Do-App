@@ -1,4 +1,5 @@
 from urllib.request import urlretrieve  
+from urllib3 import request
 import os
 # x,y = 5,6
 # print("x" if x > y else "y")
@@ -142,3 +143,7 @@ import os
 url1 = 'https://gist.githubusercontent.com/aakashns/257f6e6c8719c17d0e498ea287d1a386/raw/7def9ef4234ddf0bc82f855ad67dac8b971852ef/loans1.txt'
 
 urlretrieve(url1,"./Created/read.txt")
+
+# r = request.get('https://api.github.com/user', auth=('user', 'pass'))
+with open("./Created/read.txt") as file2:
+    print(file2.read())
