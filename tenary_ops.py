@@ -144,9 +144,7 @@ url1 = 'https://gist.githubusercontent.com/aakashns/257f6e6c8719c17d0e498ea287d1
 
 urlretrieve(url1,"./Created/read.txt")
 
-# r = request.get('https://api.github.com/user', auth=('user', 'pass'))
-with open("./Created/read.txt") as file2:
-    print(file2.read())
-    
-f2 = open("./Created/read.txt","+w")
-print(f2.read())
+# # r = request.get('https://api.github.com/user', auth=('user', 'pass'))
+with open("./Created/read.txt","r") as file2:
+    # print(file2.read())
+    print(file2.readlines())
