@@ -140,15 +140,25 @@ import os
 # print("Create" in os.listdir("."))
 # print(os.listdir("Created"))
 
-url1 = 'https://gist.githubusercontent.com/aakashns/257f6e6c8719c17d0e498ea287d1a386/raw/7def9ef4234ddf0bc82f855ad67dac8b971852ef/loans1.txt'
+# url1 = 'https://gist.githubusercontent.com/aakashns/257f6e6c8719c17d0e498ea287d1a386/raw/7def9ef4234ddf0bc82f855ad67dac8b971852ef/loans1.txt'
 
-urlretrieve(url1,"./Created/read.txt")
+# urlretrieve(url1,"./Created/read.txt")
 
-def listify(values):
-    return values.strip().split(",")
+# def listify(values):
+#     return values.strip().split(",")
 
-# # r = request.get('https://api.github.com/user', auth=('user', 'pass'))
-with open("./Created/read.txt","r") as file2:
-    # print(file2.read())
-    read_f = file2.readlines()
-    print(listify(read_f[0]))
+# # # r = request.get('https://api.github.com/user', auth=('user', 'pass'))
+# with open("./Created/read.txt","r") as file2:
+#     # print(file2.read())
+#     read_f = file2.readlines()
+#     print(listify(read_f[0]))
+#     print(read_f)
+def total(value):
+    return value["weight"]+ value["height"]
+
+lisp = [{"weight":78.33,"height":185.3},{"weight":67.11,"height":192.1}]
+
+for i in lisp:
+    i["total"] = total(i)
+
+print(lisp)
