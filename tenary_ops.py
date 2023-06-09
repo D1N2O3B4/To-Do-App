@@ -153,12 +153,13 @@ import os
 #     read_f = file2.readlines()
 #     print(listify(read_f[0]))
 #     print(read_f)
-def total(value):
-    return value["weight"]+ value["height"]
+# def total(value):
+#     return value["weight"]+ value["height"]
 
-lisp = [{"weight":78.33,"height":185.3},{"weight":67.11,"height":192.1}]
+# lisp = [{"weight":78.33,"height":185.3},{"weight":67.11,"height":192.1}]
 
-for i in lisp:
-    i["total"] = total(i)
+# for i in lisp:
+#     i["total"] = total(i)
 
-print(lisp)
+# print(lisp)
+
