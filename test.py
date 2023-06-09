@@ -6,20 +6,14 @@ def parse_headers(header_line):
 def parse_values(data_line):
     values = []
     for item in data_line.strip().split(','):
-        #if item == '':
-         #   values.append(0.0)
-        #else:
-            try:
-                values.append(float(item))
-            except ValueError:
-                values.append(0.0)
+        try:
+            values.append(float(item))
+        except ValueError:
+            values.append(0.0)
     return values
 
 def create_item_dict(values, headers):
-    result = {}
-    for value, header in zip(values, headers):
-        result[header] = value
-    return result
+    return dict(zip(headers,values)) 
 
 def read_csv(path):
     result = []
