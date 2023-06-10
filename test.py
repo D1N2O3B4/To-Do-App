@@ -77,4 +77,9 @@ def write_csv(items, path):
             f.write(','.join(values) + "\n")
 
 
-print(read_csv("./Created/data.txt"))
+rea = read_csv("./Created/data.txt")
+
+compute_emis(rea)
+
+print(write_csv(rea,"./Created/emi.txt"))
+
