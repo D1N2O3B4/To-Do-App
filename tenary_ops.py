@@ -149,10 +149,10 @@ import os
 
 # # # r = request.get('https://api.github.com/user', auth=('user', 'pass'))
 # with open("./Created/read.txt","r") as file2:
-#     # print(file2.read())
-#     read_f = file2.readlines()
-#     print(listify(read_f[0]))
-#     print(read_f)
+#     print(file2.read())
+    # read_f = file2.readlines()
+    # print(listify(read_f[0]))
+    # print(read_f)
 # def total(value):
 #     return value["weight"]+ value["height"]
 
@@ -162,4 +162,8 @@ import os
 #     i["total"] = total(i)
 
 # print(lisp)
+
+with open("./Created/data.txt","r") as rem:
+    print(rem.read())
+
 
