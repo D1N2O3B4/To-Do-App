@@ -163,7 +163,5 @@ import os
 
 # print(lisp)
 
-with open("./Created/data.txt","r") as rem:
-    print(rem.read())
 
 
