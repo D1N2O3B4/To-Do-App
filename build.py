@@ -1,12 +1,23 @@
-lisp = ["Body","Ora","Mist","Beam","Lora","Mika"]
+class Car:
+    def __init__(self,brand,version,year,c_speed,hp,petrol_cap):
+        self.brand = brand
+        self.version = version
+        self.year = year
+        self.hp = hp
+        self.speed = c_speed
+        self.petrol_cap = petrol_cap
+    
+    def drive(self):
+        while (self.petrol_cap > 0):
+            if (self.speed != self.hp):
+                self.speed += 1
+            else:
+                print("Limit reached")
+            self.petrol_cap -= 20
+            return f"Vroom speed {self.speed}"
 
-# for_b = [i for i in lisp if i[0] == "B"]
-# print(for_b)
 
-# for_a = [j for j in lisp if j[len(j)-1] == "a"]
-# print(for_a)
-print(tuple(zip(lisp,[12,23,44,22,3,24],["Ty","My","P","/","Pem","Mar"])))
 
-add = lambda x,y: x+y
+mycar = Car("Ferrari","Nuelo",2001,123,700,1000)
 
-print(add(1,2))
+print(Car.drive(mycar))
