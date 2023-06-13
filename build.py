@@ -1,7 +1,4 @@
-for i in range(2,10):
-    for j in range(2,i):
-        if i%j == 0:
-            print("Not prime")
-            break
-    else:
-        print("Prime")
+lisp = ["Body","Ora","Mist","Beam","Lora","Mika"]
+
+for_b = [i for i in lisp if i[0] == "B"]
+print(for_b)
