@@ -1,3 +1,4 @@
+import pandas as pd
 # class Car:
 #     def __init__(self,brand,version,year,hp,petrol_cap):
 #         self.brand = brand
@@ -47,4 +48,7 @@ for i in values:
     arranged_values = split_values(i)
     end = dictyfy(arranged_values,arranged_headers)
     final.append(end)
-print(final)
+# print(final)
+
+pand = pd.read_csv("./Created/read.txt")
+print(pand)
