@@ -78,8 +78,8 @@ def write_csv(items, path):
 
 
 rea = read_csv("./Created/data.txt")
+print(rea)
+# compute_emis(rea)
 
-compute_emis(rea)
-
-print(write_csv(rea,"./Created/emi.txt"))
+# print(write_csv(rea,"./Created/emi.txt"))
 
