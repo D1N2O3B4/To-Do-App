@@ -1,2 +1,3 @@
-dicty = dict(name="Frenchie",age=15)
-print(dicty)
+dicty = {"name":"david","age":21}
+
+print(dicty.get("name"))
