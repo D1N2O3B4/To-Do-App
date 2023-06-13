@@ -1,4 +1,2 @@
-dicty = {"name":"david","age":21}
-
-for i,j in dicty.items():
-    print(f"{i} : {j}")
+dicty = dict(name="Frenchie",age=15)
+print(dicty)
