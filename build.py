@@ -30,7 +30,7 @@ def split_values(object):
     new_values = []
     for i in object.strip().split(","):
         try:
-            new_values.append(float(i))
+            new_values.append(i)
         except ValueError:
             new_values.append(0.0)
     return new_values
@@ -44,11 +44,31 @@ with open("./Created/read.txt","r") as r:
 headers = p[0]
 arranged_headers = split_headers(headers)
 values = p[1:]
+
 for i in values:
     arranged_values = split_values(i)
     end = dictyfy(arranged_values,arranged_headers)
     final.append(end)
-# print(final)
+print(final)
 
-pand = pd.read_csv("./Created/read.txt")
-print(pand)
+# push = pd.read_csv("./Created/read.txt")
+
+# def write_csv(items, path):
+#     # Open the file in write mode
+#     with open(path, 'w') as f:
+#         # Return if there's nothing to write
+#         if len(items) == 0:
+#             return
+        
+#         # Write the headers in the first line
+#         headers = list(items[0].keys())
+#         f.write(','.join(headers) + '\n')
+        
+#         # Write one item per line
+#         for item in items:
+#             values = []
+#             for header in headers:
+#                 values.append(str(item.get(header, "")))
+#             f.write(','.join(values) + "\n")
+
+# write_csv(push,"emi.csv")
