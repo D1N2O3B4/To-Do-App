@@ -21,17 +21,30 @@ def to_list(obj):
   return new_values
     
 
+def group(objects):
+  total = []
+
+  a = [object for object in objects if objects[0] == object]
+  b = [object for object in objects if objects[1] == object]  
+  c = [object for object in objects if objects[2] == object]
+  d = [object for object in objects if objects[3] == object]
+  total.append(a)
+  total.append(b)
+  total.append(c)
+  total.append(d)
+  return total
+  
+
 
 dicty = {}
+total = []
 with open("./Created/read1.txt","r") as f:
   fil = f.readlines()
   headers = header_split(fil[0])
   values = fil[1:]
- 
+
   for value in values:
-    print(to_list(value))
-
-
-  # for header in headers:
-  #   print(header)
-  #   dicty[header] = 0
+    set_list = to_list(value)
+    # print(set_list)
+    total.append(group(set_list))
+print(total)
