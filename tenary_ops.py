@@ -6,7 +6,7 @@ import os
 
 # a,b = 5,3
 
-# print((b,a) [a<b])
+# print((a,b) [a<b])
 
 # test = 3.0
 # print(test)
@@ -82,12 +82,11 @@ import os
 # name = "Myelin"
 # print(list(enumerate(name)))
 
-# if { 'a': 34 }:
+# if { 'a': '4' }:
 #     print('The condition evaluted to True')
 # else:
 #     print('The condition evaluted to False')
 
-# print("Ok" if True else False)
 
 # a = 10
 
@@ -115,25 +114,28 @@ import os
 # a = 12
 
 # try:
-#     c = a/3
+#     c = a/0
 #     print("Worked")
 
 # except OSError:
 #     print('Value ebing divided not possible')
 
-# except Exception:
-#     print("Trying to divide by zero not possible")
+# # except Exception:
+# #     print("Trying to divide by zero not possible")
+# except ZeroDivisionError:
+#     print("u cant div by zero")
 
 # except SyntaxError:
-#     print("Trying to divide by zero not possible")
+#     print("Trying to divide by zero not possiblE")
 # else:
 #     print("We work if nothing happens")
 # finally:
 #     print('I will always work no matter what')
 
-# a = os.getcwdb()
+a = os.getcwdb()
+# print(a)
 # print(a.upper())
-# print(a.decode())
+print(a.decode())
 # print(os.listdir('/Users'))
 # os.makedirs("./Created",exist_ok=True) # The exist_ok = True acts as an error handler in case you call the statement and the folder already exists
 
@@ -162,6 +164,3 @@ import os
 #     i["total"] = total(i)
 
 # print(lisp)
-
-
-
