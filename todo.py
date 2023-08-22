@@ -14,13 +14,14 @@ while quitOpt:
             todo = input("Enter a todo:\n")+"\n"
             with open("todo.txt","+a") as f:
                 f.writelines(todo)
-
-
         case "edit":
             editTodo = input("Input Todo number to edit:\n")
             
         case "show":
-            pass
+            with open("todo.txt","r") as f:
+                show = f.readlines()
+            for i,j in enumerate(show,start=1):
+                print(f"{i}.{j}")
         case "complete":
             pass
         case "quit":
