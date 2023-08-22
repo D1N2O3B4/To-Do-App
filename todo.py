@@ -19,9 +19,9 @@ while quitOpt:
             
         case "show":
             with open("todo.txt","r") as f:
-                show = f.readlines()
-            for i,j in enumerate(show,start=1):
-                print(f"{i}.{j}")
+                for i,j in enumerate(f.readlines(),start=1):
+                    print(f"{i}.{j}")
+            
         case "complete":
             pass
         case "quit":
