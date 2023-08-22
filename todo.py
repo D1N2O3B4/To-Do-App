@@ -20,7 +20,7 @@ while quitOpt:
         case "show":
             with open("todo.txt","r") as f:
                 for i,j in enumerate(f.readlines(),start=1):
-                    print(f"{i}.{j}")
+                    print(f"{i}.{j.strip('n')}")
             
         case "complete":
             pass
