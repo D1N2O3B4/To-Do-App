@@ -12,15 +12,9 @@ while quitOpt:
     match(userChoice):
         case "add":
             todo = input("Enter a todo:\n")+"\n"
-            file = open("todo.txt","r")
-            todos = file.readlines()
-            file.close()
-            
-            todos.append(todo)
-            file = open("todo.txt","w")
-            file.writelines(todos)
-            file.close
-           
+            with open("todo.txt","+a") as f:
+                f.writelines(todo)
+
 
         case "edit":
             editTodo = input("Input Todo number to edit:\n")
