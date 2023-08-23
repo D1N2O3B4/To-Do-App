@@ -15,12 +15,21 @@ while True:
         index = int(editTodo) - 1
         newTodo = input("Please type in new Todo:") +"\n"
         
-        with open("todo.txt","r") as read:
+        with open("todoBetter.txt","r") as read:
             old = read.readlines()
             
-        with open("todo.txt","w") as write:
+        with open("todoBetter.txt","w") as write:
             old[index] = newTodo
             write.writelines(old)
+    elif "complete" in userInput:
+        completeTodo = int(userInput.strip("complete "))
+        with open("todoBetter.txt","r") as f:
+            lisp = f.readlines()
+        vartodo = lisp[completeTodo -1]
+        lisp.pop(completeTodo-1)
+        with open("todoBetter.txt","w") as f:
+            f.writelines(lisp)
+        print(f"{vartodo} was removed")
             
     elif "quit" in userInput: 
         break
