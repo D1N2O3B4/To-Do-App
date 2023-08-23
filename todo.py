@@ -1,5 +1,4 @@
-quitOpt = True
-while quitOpt:
+while True:
     userChoice = input("""
                         Welcome to this simple Todo Script
                         To add a new Todo type \"add\"
@@ -42,6 +41,6 @@ while quitOpt:
                 f.writelines(lisp)
             print(f"{vartodo} was removed")
         case "quit":
-            quitOpt = False
+            break
         case _:
             print("Command entered invalid!!")
