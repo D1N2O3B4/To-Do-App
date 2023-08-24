@@ -1,3 +1,4 @@
+#NEW TODO USING IF ELSE STATEMENTS AND MORE EFFICIENT
 while True:
     userInput = input("Type add,edit,show,complete,quit: ")
 
