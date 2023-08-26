@@ -1,4 +1,3 @@
-import os
 store = []
 
 def add(params):
