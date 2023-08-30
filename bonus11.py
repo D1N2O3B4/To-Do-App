@@ -3,8 +3,8 @@ def get_average():
         nums = f.readlines()
     value = nums[1:]
     value = [float(i) for i in value]
-    average_local = 
-    return ()
+    average_local = sum(value)/len(value)
+    return average_local
 
 average = get_average()
 print(average)
