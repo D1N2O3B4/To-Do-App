@@ -33,6 +33,7 @@ Write a program that gets a list of names from the user and returns the number o
 You are encouraged to use a function. 
 Here is how the program would work:
 """
+def length():
+    return f"Friend's name length is {len(input('Input friends name: '))}"
 
-
-
+print(length())
